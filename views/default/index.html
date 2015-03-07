@@ -1,0 +1,35 @@
+{{extend 'layout.html'}}
+<h2>
+    Book Store
+</h2>
+<table class="table">
+    <tr>
+    <td><h4>
+        Book Id
+    </h4></td>
+    <td><h4>
+        Book Name
+    </h4></td>
+    <td><h4>
+        Availability
+    </h4></td>
+    <td><h4>
+        Author Name
+    </h4></td>
+    <td><h4>
+        Publication Date
+    </h4></td>
+        </tr>
+    {{for row in rows:}}
+    <tr>
+        <td>{{=row.Book_Id}}</td>
+        <td>{{=row.Book_Name}}</td>
+        <td>
+            {{=row.Availability}}</td>
+        <td>
+            {{=row.Author_Name}}</td>
+        <td>{{=row.Publication_Date}}</td>
+
+    </tr>
+    {{pass}}
+</table>
